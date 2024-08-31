@@ -1,5 +1,5 @@
 td {
-  border: 2px solid #333;
+  border: 2px solid #09090b;
   height: 100px;
   width: 100px;
   text-align: center;
@@ -36,7 +36,7 @@ table tr td:last-child {
   display: none;
   width: 200px;
   top: 120px;
-  background-color: rgba(205, 133, 63, 0.8);
+  background-color: #7dd3fc;
   position: absolute;
   left: 50%;
   margin-left: -100px;
@@ -44,7 +44,7 @@ table tr td:last-child {
   padding-bottom: 50px;
   text-align: center;
   border-radius: 5px;
-  color: white;
+  color: #f8fafc;
   font-size: 2em;
 }
 
@@ -52,7 +52,7 @@ table tr td:last-child {
   display: none;
   width: 220px;
   top: 110px;
-  background-color: rgba(205, 133, 63, 0.8);
+  background-color: #7dd3fc;
   position: absolute;
   left: 50%;
   margin-left: -110px;
@@ -60,7 +60,7 @@ table tr td:last-child {
   padding-bottom: 50px;
   text-align: center;
   border-radius: 5px;
-  color: yellow;
+  color: #fcd34d;
   font-size: 2em;
 }
 
