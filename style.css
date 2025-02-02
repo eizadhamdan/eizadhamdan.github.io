@@ -447,3 +447,127 @@ footer p {
 .btn-view-projects:hover {
   cursor: pointer;
 }
+
+/* DARKER SHINY BLACK MODE WITH GRADIENT */
+.dark-mode {
+  background: linear-gradient(135deg, #0d0d0d, #1a1a1a, #333333);
+  color: #f0f0f0;
+}
+
+.dark-mode nav {
+  background: linear-gradient(135deg, #111111, #222222, #444444);
+}
+
+.dark-mode .nav-links a {
+  color: #ffffff;
+}
+
+.dark-mode .menu-links {
+  background: linear-gradient(135deg, #111111, #222222, #444444);
+}
+
+.dark-mode .btn-color-1,
+.dark-mode .btn-color-2 {
+  border: #f0f0f0 0.1rem solid;
+  color: #f0f0f0;
+  background: linear-gradient(135deg, #232323, #3a3a3a);
+  box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1);
+}
+
+.dark-mode .btn-color-1:hover {
+  background: #ffffff;
+  color: #000000;
+}
+
+.dark-mode .btn-color-2:hover {
+  border: #ffffff 0.1rem solid;
+  background: linear-gradient(135deg, #2b2b2b, #444444);
+}
+
+.dark-mode .details-container {
+  background: linear-gradient(135deg, #1b1b1b, #292929);
+  border: #f0f0f0 0.1rem solid;
+  box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1);
+}
+
+.dark-mode .project-title {
+  color: #ffffff;
+}
+
+.dark-mode .project-btn {
+  color: #ffffff;
+  border-color: #ffffff;
+}
+
+/* Text Color Enhancements */
+.dark-mode p,
+.dark-mode h1,
+.dark-mode h2,
+.dark-mode h3,
+.dark-mode h4,
+.dark-mode h5,
+.dark-mode h6 {
+  color: #ffffff;
+  text-shadow: 1px 1px 5px rgba(255, 255, 255, 0.1);
+}
+
+/* Icon Styling */
+.dark-mode .icon {
+  filter: brightness(120%);
+}
+
+/* Default Light Mode Button */
+#dark-mode-toggle {
+  background: linear-gradient(135deg, #eeeeee, #dddddd);
+  color: #000000;
+  border: 2px solid #000000;
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+  font-size: 1.5rem; /* Bigger text */
+  padding: 12px 20px; /* Increase button size */
+  border-radius: 12px; /* More rounded corners */
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+}
+
+/* Enlarged Effect when Switching to Dark Mode */
+.dark-mode #dark-mode-toggle {
+  background: linear-gradient(135deg, #1a1a1a, #333333);
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  box-shadow: 0px 6px 15px rgba(255, 255, 255, 0.3);
+  font-size: 1.7rem; /* Even bigger text in dark mode */
+  padding: 14px 24px; /* Larger button */
+  transform: scale(1.1); /* Slight enlarge effect */
+  border-radius: 15px; /* Slightly more rounded in dark mode */
+}
+
+/* Hover Effect in Light Mode */
+#dark-mode-toggle:hover {
+  transform: scale(1.15);
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Hover Effect in Dark Mode */
+.dark-mode #dark-mode-toggle:hover {
+  background: linear-gradient(135deg, #0a0a0a, #222222); /* Darker Hover */
+  color: #ffffff;
+  transform: scale(1.2);
+  box-shadow: 0px 10px 25px rgba(255, 255, 255, 0.5);
+}
+
+/* Animated Effect on Toggle */
+@keyframes toggleAnimation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+#dark-mode-toggle:active {
+  animation: toggleAnimation 0.3s ease-in-out;
+}
